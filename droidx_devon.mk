@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/devon/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_devon
+PRODUCT_NAME := droidx_devon
 PRODUCT_DEVICE := devon
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g32
@@ -27,3 +27,6 @@ BUILD_FINGERPRINT := "motorola/devon_g/devon:12/S2SNS32.34-60-6/3726f-2b0264:use
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=devon_g \
     PRIVATE_BUILD_DESC="devon_g-user 12 S2SNS32.34-60-6 3726f-2b0264 release-keys"
+
+# Droidx Props
+DROIDX_BUILD_TYPE := OFFICIAL
